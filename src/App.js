@@ -5,8 +5,8 @@ import Summary from './components/Summary';
 function App() {
   return (
     <>
-    <NavBar />
-    <Summary />
+      <NavBar />
+      <Summary />
     </>
   );
 }

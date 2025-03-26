@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import '../App.css';
 
 const NavBar = () => {
@@ -7,9 +8,33 @@ const NavBar = () => {
                 Ayoub
             </div>
             <div className='navbar'>
-                <a className='navitem' href='/'>Home</a>
-                <a className='navitem' href='/projects'>Projects</a>
-                <a className='navitem' href='/contact'>Contact</a>
+                <NavLink 
+                    to="/" 
+                    style={({ isActive }) => ({
+                        textDecoration: isActive ? 'underline' : 'none'
+                    })}
+                    className="navitem"
+                >
+                    Home
+                </NavLink>
+                <NavLink 
+                    to="/projects" 
+                    style={({ isActive }) => ({
+                        textDecoration: isActive ? 'underline' : 'none'
+                    })}
+                    className="navitem"
+                >
+                    Projects
+                </NavLink>
+                <NavLink 
+                    to="/contact" 
+                    style={({ isActive }) => ({
+                        textDecoration: isActive ? 'underline' : 'none'
+                    })}
+                    className="navitem"
+                >
+                    Contact
+                </NavLink>
             </div>
         </div>
     );
