@@ -1,25 +1,41 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-.navbar {
-    display: flex;
-    gap: 60px;
+.nav-link.active {
+    text-decoration: none;
+    border-bottom: 2px solid blue;
 }
 
-.navitem { 
-    text-decoration: none;
-    color: #000;
+.navbar-nav .nav-link {
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.navbar-brand {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+.dropdown-item {
+    font-family: "Poppins", sans-serif;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+    width: 80%;
+    max-width: 1000px;
+    font-family: "Poppins", sans-serif;
+}
+
+.project-picture {
+    width: 300px;
+    height: 400px;
+    margin-right: 70px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .summary-container {
@@ -27,7 +43,7 @@
     justify-content: center;
     width: 100%;
     padding: 20px;
-    font-family: "Poppins", sans-serif; 
+    font-family: "Poppins", sans-serif;
 }
 
 .summary {
@@ -40,10 +56,10 @@
 }
 
 .profilepic {
-    width: 300;
+    width: 300px;
     height: 300px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 70px;
     border: 2px solid #000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
