@@ -11,7 +11,9 @@ const NavBar = () => {
                 <NavLink 
                     to="/" 
                     style={({ isActive }) => ({
-                        textDecoration: isActive ? 'underline' : 'none'
+                        textDecoration: isActive ? 'underline' : 'none',
+                        textDecorationColor: isActive ? 'blue' : 'inherit',
+                        textUnderlineOffset: isActive ? '10px' : '0'
                     })}
                     className="navitem"
                 >
@@ -20,7 +22,9 @@ const NavBar = () => {
                 <NavLink 
                     to="/projects" 
                     style={({ isActive }) => ({
-                        textDecoration: isActive ? 'underline' : 'none'
+                        textDecoration: isActive ? 'underline' : 'none',
+                        textDecorationColor: isActive ? 'blue' : 'inherit',
+                        textUnderlineOffset: isActive ? '10px' : '0'
                     })}
                     className="navitem"
                 >
@@ -29,7 +33,9 @@ const NavBar = () => {
                 <NavLink 
                     to="/contact" 
                     style={({ isActive }) => ({
-                        textDecoration: isActive ? 'underline' : 'none'
+                        textDecoration: isActive ? 'underline' : 'none',
+                        textDecorationColor: isActive ? 'blue' : 'inherit',
+                        textUnderlineOffset: isActive ? '10px' : '0'
                     })}
                     className="navitem"
                 >
