@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/new-portfolio">
       <NavBar />
       <Routes>
         <Route path="/" element={<Summary />} />
