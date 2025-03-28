@@ -4,7 +4,7 @@ const Project1 = () => {
     return (
         <div className='project'>
             <div>
-                <img className='project-gif' src='/ResumeGif.gif' alt='Project 1' />
+                <img className='project-gif' src={`${process.env.PUBLIC_URL}/ResumeGif.gif`} alt='Project 1' />
             </div>
             <div className='description'>
             Resume Analyzer Using AI <br />

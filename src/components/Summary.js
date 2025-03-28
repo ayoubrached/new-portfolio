@@ -5,7 +5,7 @@ const Summary = () => {
         <div className='summary-container'>
             <div className='summary'>
                 <div className='summary-picture'>
-                    <img className='profilepic' src='/AyoubProfilePic.jpeg' alt='Ayoubs Profile' />
+                    <img className='profilepic' src={`${process.env.PUBLIC_URL}/AyoubProfilePic.jpeg`} alt='Ayoubs Profile' />
                 </div>
                 <div className='summary-header'>
                     <h1>About Me</h1>

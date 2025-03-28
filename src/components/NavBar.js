@@ -21,7 +21,7 @@ const NavBar = () => {
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
                             <NavLink 
-                                to="/" 
+                                to="/new-portfolio" 
                                 className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}
                             >
                                 Home
