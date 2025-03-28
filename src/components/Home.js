@@ -1,6 +1,6 @@
 import '../App.css';
 
-const Summary = () => {
+const Home = () => {
     return (
         <div className='summary-container'>
             <div className='summary'>
@@ -17,8 +17,17 @@ const Summary = () => {
                     </p>
                 </div>
             </div>
+            <div className='summary'>
+                <img className='skills' src={`${process.env.PUBLIC_URL}/p_languages.png`} alt='Skills' />
+                <div className='skills-header'>
+                    <h1>Technical Expertise</h1>
+                    <p>I'm proficient in many programming languages and framewords, listed to the left (in order of decreasing
+                        proficiency). I am always eager to learn new technologies and improve my skills.
+                    </p>
+                </div>
+            </div>
         </div>
     );
 }
 
-export default Summary;
+export default Home;

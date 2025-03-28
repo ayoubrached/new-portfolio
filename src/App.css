@@ -40,8 +40,11 @@
 
 .summary-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     font-family: "Poppins", sans-serif;
 }
@@ -50,8 +53,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 50px;
-    width: 80%;
+    margin-top: 100px;
+    width: 100%;
     max-width: 1000px;
 }
 
@@ -62,4 +65,10 @@
     margin-right: 70px;
     border: 2px solid #000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.skills {
+    width: 300px;
+    height: 220px;
+    margin-right: 68px;
 }
