@@ -5,32 +5,36 @@ const Project1 = () => {
         <div className="container mt-5">
             <div className="row justify-content-center">
                 <div className="col-12 col-lg-10">
-                    <div className="d-flex flex-column flex-lg-row align-items-center">
+                    <div className="d-flex flex-column flex-lg-row align-items-center gap-5">
                         {/* Project Image */}
-                        <div className="mb-4 mb-lg-0">
+                        <div className="col-lg-7 mb-4 mb-lg-0 pe-lg-4">
                             <img 
-                                className="border border-dark shadow" 
-                                style={{
-                                    width: '650px',
-                                    height: '350px',
-                                    maxWidth: '100%'
-                                }}
+                                className="border border-dark shadow img-fluid" 
                                 src={`${process.env.PUBLIC_URL}/ResumeGif.gif`} 
                                 alt="Resume Analyzer Project" 
                             />
                         </div>
                         
                         {/* Project Description */}
-                        <div className="ps-0 ps-lg-5">
+                        <div className="col-lg-5">
                             <h2 className="mb-2">Resume Analyzer Using AI</h2>
                             <p className="mb-3"><strong>Technologies Used:</strong> React, Python, FastAPI, MySQL, Tailwind CSS, Docker</p>
-                            <ul className="list-unstyled">
-                                <li className="mb-2">• Designed and developed a responsive SaaS application using React and Tailwind CSS, implementing RESTful APIs using OpenAI API for seamless frontend-backend integration.</li>
-                                <li className="mb-2">• Implemented robust SQL database architecture for user authentication and data persistence.</li>
-                                <li className="mb-2">• Applied data modeling principles to design optimized schemas for storing user data and resume analysis results.</li>
-                                <li className="mb-2">• Created automated testing suites achieving more than 90% code coverage using Jest and maintaining CI/CD pipelines.</li>
-                                <li className="mb-2">• Collaborated with cross-functional teams using Agile methodologies to integrate AI models and deliver actionable insights.</li>
+                            <p className="mb-3">
+                                A collaborative project that leverages AI to evaluate resume effectiveness against specific job descriptions. 
+                                The application analyzes uploaded resumes against job requirements, providing personalized feedback on:
+                            </p>
+                            <ul className="mb-4">
+                                <li>Candidate's fit for the position</li>
+                                <li>Resume strengths and highlights</li>
+                                <li>Targeted suggestions for improvement</li>
+                                <li>Keyword optimization recommendations</li>
                             </ul>
+                            <p className="mb-3">
+                                Features include user account creation for saved analyses, customizable UI themes, 
+                                and resume export functionality. Built with a modern tech stack and designed with 
+                                accessibility in mind, this tool helps job seekers optimize their applications for 
+                                better success rates.
+                            </p>
                         </div>
                     </div>
                 </div>

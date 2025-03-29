@@ -16,10 +16,14 @@ const Home = () => {
                 <div className="col-md-6 col-lg-5">
                     <h1 className="mb-3">About Me</h1>
                     <p>
-                        Software Engineer and CS student at NJIT (graduating May 2025) with experience in building high-performance applications. Currently working at Divno developing mobile apps with React Native and TypeScript, where I've improved UI responsiveness by 30% and reduced rendering latency by 20%.
+                        Software Engineer and CS student at NJIT (graduating May 2025) with experience in 
+                        building high-performance applications. Currently working at Divno developing mobile apps with 
+                        React Native and TypeScript, where I've improved UI responsiveness by 30% and reduced rendering latency by 20%.
                     </p>
                     <p>
-                        AWS Certified with expertise in React, React Native, Python, Java, and C/C++. My projects include a Serverless Compute Platform and an AI-powered Resume Analyzer, demonstrating my ability to create scalable solutions using microservices architecture and CI/CD pipelines.
+                        AWS Certified with expertise in React, React Native, Python, Java, and C/C++. My projects include 
+                        a Serverless Compute Platform and an AI-powered Resume Analyzer, demonstrating my ability to 
+                        create scalable solutions using microservices architecture and CI/CD pipelines.
                     </p>
                 </div>
             </div>
@@ -56,9 +60,10 @@ const Home = () => {
                 <div className="col-md-6 col-lg-5">
                     <h1 className="mb-3">AWS Certified</h1>
                     <p>
-                        I am an AWS Certified Solutions Architect, demonstrating my expertise in designing and implementing 
-                        distributed systems on the AWS platform. This certification validates my ability to build secure 
-                        and robust cloud applications using AWS technologies.
+                        I am an AWS Certified Cloud Practitioner, demonstrating my foundational knowledge of AWS cloud services, 
+                        security, architecture, pricing, and support. This certification validates my understanding of core AWS 
+                        concepts, allowing me to make informed decisions about AWS services for business needs and effectively 
+                        communicate about cloud solutions.
                     </p>
                     <p className="text-muted">
                         <small>
