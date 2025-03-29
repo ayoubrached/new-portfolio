@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <div className="container py-5">
             {/* About Me Section */}
-            <div className="row justify-content-center align-items-center mb-5">
+            <div className="row justify-content-center align-items-center gap-5 mb-5">
                 <div className="col-md-4 col-lg-3 text-center text-md-end mb-4 mb-md-0">
                     <img 
                         className="img-fluid rounded-circle border border-dark shadow" 
@@ -25,7 +25,7 @@ const Home = () => {
             </div>
 
             {/* Technical Expertise Section */}
-            <div className="row justify-content-center align-items-center mt-5">
+            <div className="row justify-content-center align-items-center gap-5 mt-5">
                 <div className="col-md-4 col-lg-3 text-center text-md-end mb-4 mb-md-0">
                     <img 
                         className="img-fluid border-0" 
@@ -39,6 +39,31 @@ const Home = () => {
                     <p>
                         I'm proficient in many programming languages and frameworks, listed to the left (in order of decreasing
                         proficiency). I am always eager to learn new technologies and improve my skills.
+                    </p>
+                </div>
+            </div>
+            
+            {/* AWS Certification Section */}
+            <div className="row justify-content-center align-items-center gap-5 mt-5 pt-4">
+                <div className="col-md-4 col-lg-3 text-center text-md-center mb-4 mb-md-0">
+                    <img 
+                        className="img-fluid rounded" 
+                        style={{maxWidth: '220px'}}
+                        src={`${process.env.PUBLIC_URL}/aws-certified-cloud-practitioner.png`} 
+                        alt="AWS Certification Badge" 
+                    />
+                </div>
+                <div className="col-md-6 col-lg-5">
+                    <h1 className="mb-3">AWS Certified</h1>
+                    <p>
+                        I am an AWS Certified Solutions Architect, demonstrating my expertise in designing and implementing 
+                        distributed systems on the AWS platform. This certification validates my ability to build secure 
+                        and robust cloud applications using AWS technologies.
+                    </p>
+                    <p className="text-muted">
+                        <small>
+                            <strong>Issued:</strong> September 8, 2024 | <strong>Expires:</strong> September 8, 2027
+                        </small>
                     </p>
                 </div>
             </div>
