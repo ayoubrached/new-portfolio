@@ -1,74 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+* {
+    font-family: "Poppins", sans-serif;
+}
+
 .nav-link.active {
     text-decoration: none;
     border-bottom: 2px solid blue;
-}
-
-.navbar-nav .nav-link {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-}
-
-.navbar-brand {
-    font-family: "Poppins", sans-serif;
-    font-size: 24px;
-}
-
-.dropdown-item {
-    font-family: "Poppins", sans-serif;
-}
-
-.project {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 50px auto 0 auto;
-    width: 100%;
-    max-width: 1200px;
-    font-family: "Poppins", sans-serif;
-}
-
-.project-gif {
-    width: 650px;
-    height: 350px;
-    margin-right: 70px;
-    border: 2px solid #000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.summary-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    font-family: "Poppins", sans-serif;
-}
-
-.summary {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 100px;
-    width: 100%;
-    max-width: 1000px;
-}
-
-.profilepic {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin-right: 70px;
-    border: 2px solid #000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.skills {
-    width: 300px;
-    height: 220px;
-    margin-right: 68px;
 }
