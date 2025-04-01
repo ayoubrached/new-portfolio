@@ -1,13 +1,16 @@
 import '../App.css';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: ''
     });
     const [formStatus, setFormStatus] = useState(null);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -19,11 +22,27 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setFormStatus('success');
-        console.log('Form submitted:', formData);
-        setFormData({ name: '', email: '', message: '' });
-        // Clear success message after 3 seconds
-        setTimeout(() => setFormStatus(null), 3000);
+        setIsSubmitting(true);
+        
+        const serviceId = 'service_oz26ybt';
+        const templateId = 'template_td2733d';
+        const publicKey = 'UCRRwh9u5Wt2qTpM3';
+        
+        emailjs.sendForm(serviceId, templateId, form.current, publicKey)
+            .then((result) => {
+                console.log('Email sent successfully:', result.text);
+                setFormStatus('success');
+                setFormData({ name: '', email: '', message: '' });
+                setTimeout(() => setFormStatus(null), 5000);
+            })
+            .catch((error) => {
+                console.error('Failed to send email:', error.text);
+                setFormStatus('error');
+                setTimeout(() => setFormStatus(null), 5000);
+            })
+            .finally(() => {
+                setIsSubmitting(false);
+            });
     };
 
     return (
@@ -90,7 +109,13 @@ const Contact = () => {
                                 </div>
                             )}
                             
-                            <form onSubmit={handleSubmit}>
+                            {formStatus === 'error' && (
+                                <div className="alert alert-danger">
+                                    Sorry, something went wrong. Please try again later.
+                                </div>
+                            )}
+                            
+                            <form ref={form} onSubmit={handleSubmit}>
                                 <div className="mb-3">
                                     <label htmlFor="name" className="form-label">Name</label>
                                     <input
@@ -130,8 +155,12 @@ const Contact = () => {
                                     ></textarea>
                                 </div>
                                 
-                                <button type="submit" className="btn btn-primary px-4 py-2">
-                                    Send Message
+                                <button 
+                                    type="submit" 
+                                    className="btn btn-primary px-4 py-2" 
+                                    disabled={isSubmitting}
+                                >
+                                    {isSubmitting ? 'Sending...' : 'Send Message'}
                                 </button>
                             </form>
                         </div>
