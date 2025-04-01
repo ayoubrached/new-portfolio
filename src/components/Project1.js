@@ -5,17 +5,22 @@ const Project1 = () => {
         <div className="container mt-5">
             <div className="row justify-content-center">
                 <div className="col-12 col-lg-10">
-                    <div className="d-flex flex-column flex-lg-row align-items-center gap-5">
-                        {/* Project Image */}
+                    <div className="d-flex flex-column flex-lg-row align-items-center">
+                        {/* Project Video - 60% width */}
                         <div className="col-lg-7 mb-4 mb-lg-0 pe-lg-4">
-                            <img 
+                            <video 
                                 className="border border-dark shadow img-fluid" 
-                                src={`${process.env.PUBLIC_URL}/ResumeGif.gif`} 
-                                alt="Resume Analyzer Project" 
-                            />
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                src={`${process.env.PUBLIC_URL}/ResumeClip.mp4`}
+                            >
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                         
-                        {/* Project Description */}
+                        {/* Project Description - 40% width */}
                         <div className="col-lg-5">
                             <h2 className="mb-2">Resume Analyzer Using AI</h2>
                             <p className="mb-3"><strong>Technologies Used:</strong> React, Python, FastAPI, MySQL, Tailwind CSS, Docker</p>
