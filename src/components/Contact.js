@@ -51,8 +51,8 @@ const Contact = () => {
                 <div className="col-md-8">
                     <h2 className="text-center mb-5">Contact Me</h2>
                     
-                    <div className="row mb-5">
-                        <div className="col-md-4 mb-4 mb-md-0">
+                    <div className="row mb-5 justify-content-center">
+                        <div className="col-md-4 mb-4 mb-md-0 mx-2">
                             <div className="card h-100 shadow-sm">
                                 <div className="card-body text-center">
                                     <i className="bi bi-linkedin fs-1 text-primary mb-3"></i>
@@ -68,7 +68,7 @@ const Contact = () => {
                             </div>
                         </div>
                         
-                        <div className="col-md-4 mb-4 mb-md-0">
+                        <div className="col-md-4 mb-4 mb-md-0 mx-2">
                             <div className="card h-100 shadow-sm">
                                 <div className="card-body text-center">
                                     <i className="bi bi-github fs-1 text-dark mb-3"></i>
@@ -84,19 +84,6 @@ const Contact = () => {
                             </div>
                         </div>
                         
-                        <div className="col-md-4">
-                            <div className="card h-100 shadow-sm">
-                                <div className="card-body text-center">
-                                    <i className="bi bi-envelope fs-1 text-success mb-3"></i>
-                                    <h5 className="card-title">Email</h5>
-                                    <p className="card-text">Send me a direct message</p>
-                                    <a href="mailto:ayoubrached10@gmail.com" 
-                                       className="btn btn-outline-success">
-                                        Email Me
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     
                     <div className="card shadow-sm">

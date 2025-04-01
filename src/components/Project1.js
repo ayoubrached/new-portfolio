@@ -7,7 +7,7 @@ const Project1 = () => {
                 <div className="col-12 col-lg-10">
                     <div className="d-flex flex-column flex-lg-row align-items-center">
                         {/* Project Video - 60% width */}
-                        <div className="col-lg-7 mb-4 mb-lg-0 pe-lg-4">
+                        <div className="col-lg-7 mb-4 mb-lg-0 pe-lg-5">
                             <video 
                                 className="border border-dark shadow img-fluid" 
                                 autoPlay
