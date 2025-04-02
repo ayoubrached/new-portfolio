@@ -50,12 +50,22 @@ const Home = () => {
             {/* AWS Certification Section */}
             <div className="row justify-content-center align-items-center gap-5 mt-5 pt-4">
                 <div className="col-md-4 col-lg-3 text-center text-md-center mb-4 mb-md-0">
-                    <img 
-                        className="img-fluid rounded" 
-                        style={{maxWidth: '220px'}}
-                        src={`${process.env.PUBLIC_URL}/aws-certified-cloud-practitioner.png`} 
-                        alt="AWS Certification Badge" 
-                    />
+                    <div className="d-flex align-items-center justify-content-center gap-2">
+                        <img 
+                            className="img-fluid" 
+                            style={{maxWidth: '100px'}}
+                            src={`${process.env.PUBLIC_URL}/clickme.png`} 
+                            alt="Click Me" 
+                        />
+                        <a href="https://www.credly.com/badges/30d2d87c-7d1d-48d5-b5fa-a1996c330170/public_url">
+                            <img 
+                                className="img-fluid rounded" 
+                                style={{maxWidth: '220px'}}
+                                src={`${process.env.PUBLIC_URL}/aws-certified-cloud-practitioner.png`}
+                                alt="AWS Certification Badge" 
+                            />
+                        </a>
+                    </div>
                 </div>
                 <div className="col-md-6 col-lg-5">
                     <h1 className="mb-3">AWS Certified</h1>
