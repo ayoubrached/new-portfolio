@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
@@ -9,16 +9,16 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <NavBar />
       <Routes>
-        <Route path="/new-portfolio" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/project1" element={<Project1 />} />
         <Route path="/project2" element={<Project2 />} />
         <Route path="/project3" element={<Project3 />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

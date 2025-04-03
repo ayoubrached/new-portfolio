@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <div className="container">
-                <NavLink to="/new-portfolio" className="navbar-brand fw-bold">Ayoub</NavLink>
+                <NavLink to="/" className="navbar-brand fw-bold">Ayoub</NavLink>
                 
                 <button 
                     className="navbar-toggler" 
@@ -23,7 +23,7 @@ const NavBar = () => {
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
                             <NavLink 
-                                to="/new-portfolio" 
+                                to="/" 
                                 className={({ isActive }) => 
                                     "nav-link px-3" + (isActive ? " active" : "")
                                 }
