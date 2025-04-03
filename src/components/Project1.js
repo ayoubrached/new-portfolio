@@ -6,7 +6,6 @@ const Project1 = () => {
             <div className="row justify-content-center">
                 <div className="col-12 col-lg-10">
                     <div className="d-flex flex-column flex-lg-row align-items-center">
-                        {/* Project Video */}
                         <div className="col-lg-7 mb-4 mb-lg-0 pe-lg-5">
                             <video 
                                 className="border border-dark shadow img-fluid" 
@@ -20,7 +19,6 @@ const Project1 = () => {
                             </video>
                         </div>
                         
-                        {/* Project Description */}
                         <div className="col-lg-5">
                             <h2 className="mb-2">Resume Analyzer Using AI</h2>
                             <p className="mb-3"><strong>Technologies Used:</strong> React, Python, FastAPI, MySQL, Tailwind CSS, Docker</p>

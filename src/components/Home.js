@@ -3,7 +3,6 @@ import '../App.css';
 const Home = () => {
     return (
         <div className="container py-5">
-            {/* About Me Section */}
             <div className="row justify-content-center align-items-center gap-5 mb-5">
                 <div className="col-md-4 col-lg-3 text-center text-md-end mb-4 mb-md-0">
                     <img 
@@ -28,7 +27,6 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Technical Expertise Section */}
             <div className="row justify-content-center align-items-center gap-5 mt-5">
                 <div className="col-md-4 col-lg-3 text-center text-md-end mb-4 mb-md-0">
                     <img 
@@ -47,7 +45,6 @@ const Home = () => {
                 </div>
             </div>
             
-            {/* AWS Certification Section */}
             <div className="row justify-content-center align-items-center gap-5 mt-5 pt-4">
                 <div className="col-md-4 col-lg-3 text-center text-md-center mb-4 mb-md-0">
                     <div className="d-flex align-items-center justify-content-center gap-2">

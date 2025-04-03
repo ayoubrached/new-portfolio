@@ -6,7 +6,6 @@ const Project2 = () => {
             <div className="row justify-content-center">
                 <div className="col-12 col-lg-10">
                     <div className="d-flex flex-column flex-lg-row align-items-center justify-content-end" style={{ gap: '0', paddingRight: '7%' }}>
-                        {/* Project Video */}
                         <div className="col-lg-5 mb-4 mb-lg-0">
                             <div className="d-inline-block" style={{ 
                                 borderRadius: '40px',
@@ -31,7 +30,6 @@ const Project2 = () => {
                             </div>
                         </div>
                         
-                        {/* Project Description */}
                         <div className="col-lg-5">
                             <h2 className="mb-2">Divno (Very early design)</h2>
                             <p className="mb-3"><strong>Technologies Used:</strong> React Native, Firebase, Node.js, Express</p>
