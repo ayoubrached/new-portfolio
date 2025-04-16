@@ -1,4 +1,5 @@
 import '../App.css';
+// DEVELOPER: Ayoub Rached, IS117-002, Spring 2025
 
 const Project1 = () => { 
     return (

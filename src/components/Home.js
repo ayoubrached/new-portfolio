@@ -1,5 +1,5 @@
 import '../App.css';
-
+// DEVELOPER: Ayoub Rached, IS117-002, Spring 2025
 const Home = () => {
     return (
         <div className="container py-5">
@@ -13,17 +13,21 @@ const Home = () => {
                     />
                 </div>
                 <div className="col-md-6 col-lg-5">
-                    <h1 className="mb-3">About Me</h1>
-                    <p>
-                        Software Engineer and CS student at NJIT (graduating May 2025) with experience in 
-                        building high-performance applications. Currently working at Divno developing mobile apps with 
-                        React Native and TypeScript, where I've improved UI responsiveness by 30% and reduced rendering latency by 20%.
-                    </p>
-                    <p>
-                        AWS Certified with expertise in React, React Native, Python, Java, and C/C++. My projects include 
-                        a Serverless Compute Platform and an AI-powered Resume Analyzer, demonstrating my ability to 
-                        create scalable solutions using microservices architecture and CI/CD pipelines.
-                    </p>
+                    <div className="card border-0">
+                        <div className="card-body">
+                            <h1 className="card-title mb-3">About Me</h1>
+                            <p className="card-text">
+                                Software Engineer and CS student at NJIT (graduating May 2025) with experience in 
+                                building high-performance applications. Currently working at Divno developing mobile apps with 
+                                React Native and TypeScript, where I've improved UI responsiveness by 30% and reduced rendering latency by 20%.
+                            </p>
+                            <p className="card-text">
+                                AWS Certified with expertise in React, React Native, Python, Java, and C/C++. My projects include 
+                                a Serverless Compute Platform and an AI-powered Resume Analyzer, demonstrating my ability to 
+                                create scalable solutions using microservices architecture and CI/CD pipelines.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -37,11 +41,15 @@ const Home = () => {
                     />
                 </div>
                 <div className="col-md-6 col-lg-5">
-                    <h1 className="mb-3">Technical Expertise</h1>
-                    <p>
-                        I'm proficient in many programming languages and frameworks, listed to the left (in order of decreasing
-                        proficiency). I am always eager to learn new technologies and improve my skills.
-                    </p>
+                    <div className="card border-0">
+                        <div className="card-body">
+                            <h1 className="card-title mb-3">Technical Expertise</h1>
+                            <p className="card-text">
+                                I'm proficient in many programming languages and frameworks, listed to the left (in order of decreasing
+                                proficiency). I am always eager to learn new technologies and improve my skills.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -65,18 +73,22 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-5">
-                    <h1 className="mb-3">AWS Certified</h1>
-                    <p>
-                        I am an AWS Certified Cloud Practitioner, demonstrating my foundational knowledge of AWS cloud services, 
-                        security, architecture, pricing, and support. This certification validates my understanding of core AWS 
-                        concepts, allowing me to make informed decisions about AWS services for business needs and effectively 
-                        communicate about cloud solutions.
-                    </p>
-                    <p className="text-muted">
-                        <small>
-                            <strong>Issued:</strong> September 8, 2024 | <strong>Expires:</strong> September 8, 2027
-                        </small>
-                    </p>
+                    <div className="card border-0">
+                        <div className="card-body">
+                            <h1 className="card-title mb-3">AWS Certified</h1>
+                            <p className="card-text">
+                                I am an AWS Certified Cloud Practitioner, demonstrating my foundational knowledge of AWS cloud services, 
+                                security, architecture, pricing, and support. This certification validates my understanding of core AWS 
+                                concepts, allowing me to make informed decisions about AWS services for business needs and effectively 
+                                communicate about cloud solutions.
+                            </p>
+                            <p className="card-text text-muted">
+                                <small>
+                                    <strong>Issued:</strong> September 8, 2024 | <strong>Expires:</strong> September 8, 2027
+                                </small>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

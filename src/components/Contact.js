@@ -1,6 +1,7 @@
 import '../App.css';
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+// DEVELOPER: Ayoub Rached, IS117-002, Spring 2025
 
 const Contact = () => {
     const form = useRef();

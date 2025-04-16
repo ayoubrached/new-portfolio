@@ -1,5 +1,5 @@
 import '../App.css';
-
+// DEVELOPER: Ayoub Rached, IS117-002, Spring 2025
 const Project3 = () => { 
     return (
         <div className="container mt-5">
