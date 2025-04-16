@@ -7,6 +7,7 @@ import Project2 from './components/Project2';
 import Project3 from './components/Project3';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+// DEVELOPER: Ayoub Rached, IS117-002, Spring 2025
 
 function App() {
   return (
